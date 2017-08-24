@@ -1,0 +1,23 @@
+<div>
+    Student Number :- <input [(ngModel)] = "Student.Number" type="text"><br/>
+    Student First Name :- <input [(ngModel)] = "Student.FirstName" type="text"><br/>
+    Student Last Name :- <input [(ngModel)] = "Student.LastName" type="text"><br/>
+    Student Program :- <input [(ngModel)] = "Student.Program" type="text"><br/>
+    Student Year :- <input [(ngModel)] = "Student.Year" type="text"><br/>
+    <student-detail studFname="{{Student.FirstName}}" studLname="{{Student.LastName}}"
+    studnumber="{{Student.Number}}" studYear="{{Student.Year}}" (onButtonClick)="onButtonClick()">
+    </student-detail>
+</div>
+  <section>
+    <br/>
+    <div> Student Detail are </div>
+    <div>
+      Studetn Number: {{studNumber}}<br/>
+      Student First Name: {{studFirstName}}<br/>
+      Student Last Name: {{studLastName}}<br/>
+      Student Program: {{studProgram}}<br/>
+      Student Year: {{studYear}}<br/>
+      <button (click)="onClick()"> Add Entry </button>
+      <br/>
+      <ng-content></ng-content>
+    </selection>
